@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Premium Decorative Soft Circles -->
+    <View
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="-120dp"
+        android:layout_marginEnd="-120dp"
+        android:alpha="0.12"
+        android:background="@drawable/orange_soft_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="-120dp"
+        android:layout_marginBottom="-100dp"
+        android:alpha="0.08"
+        android:background="@drawable/orange_soft_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Center Splash Brand Container -->
+    <LinearLayout
+        android:id="@+id/layoutSplashHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Elevated App Icon Card using @drawable/iconapp -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="10dp"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="#FFE8D6"
+            android:backgroundTint="#FFFFFF">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:src="@drawable/iconapp"
+                android:contentDescription="TechZone Logo" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Brand Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="TechZone"
+            android:textColor="#0F172A"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03" />
+
+        <!-- Subtitle Tagline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Phụ kiện công nghệ - Kết nối đam mê"
+            android:textColor="#64748B"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Original Circular Progress Indicator -->
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:indeterminateTint="@color/orange_primary" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

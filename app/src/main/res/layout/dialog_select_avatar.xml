@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn Avatar Cá Nhân ✨"
+        android:textColor="#0F172A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mẫu Avatar Nam (1 - 5):"
+        android:textColor="@color/orange_primary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNam1"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnam1"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNam2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnam2"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNam3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnam3"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNam4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnam4"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNam5"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnam5"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mẫu Avatar Nữ (1 - 5):"
+        android:textColor="@color/orange_primary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNu1"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnu1"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNu2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnu2"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNu3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnu3"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNu4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnu4"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarNu5"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/anhnu5"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@color/orange_primary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="200dp"
+    android:viewportWidth="360"
+    android:viewportHeight="200">
+
+  <!-- Map City Grid Base Background -->
+  <path
+      android:pathData="M0,0h360v200H0z"
+      android:fillColor="#E2E8F0" />
+
+  <!-- City Blocks / Parcels -->
+  <path
+      android:pathData="M10,10h80v60H10z M100,10h120v40H100z M230,10h120v60H230z M10,80h100v50H10z M120,60h100v70H120z M230,80h120v50H230z M10,140h120v50H10z M140,140h210v50H140z"
+      android:fillColor="#F1F5F9" />
+
+  <!-- Secondary Roads (Gray lines) -->
+  <path
+      android:pathData="M0,75h360 M0,135h360 M95,0v200 M225,0v200 M135,0v200"
+      android:strokeColor="#CBD5E1"
+      android:strokeWidth="6" />
+
+  <!-- Main Highway Road (Light Yellow/White) -->
+  <path
+      android:pathData="M0,100 Q120,100 180,70 T360,40"
+      android:strokeColor="#FFFFFF"
+      android:strokeWidth="16" />
+
+  <!-- Active Delivery Route (Orange Highlighted Path) -->
+  <path
+      android:pathData="M40,100 Q120,100 180,70 T280,40"
+      android:strokeColor="#F97316"
+      android:strokeWidth="6"
+      android:strokeLineCap="round" />
+
+  <!-- Dotted Traveled Path -->
+  <path
+      android:pathData="M40,100 Q120,100 180,70"
+      android:strokeColor="#3B82F6"
+      android:strokeWidth="4"
+      android:strokeLineCap="round" />
+
+  <!-- Starting Shipper Vehicle Circle Pin -->
+  <path
+      android:pathData="M180,70 m-12,0 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0"
+      android:fillColor="#2563EB" />
+  <path
+      android:pathData="M176,66 h8 v8 h-8 z"
+      android:fillColor="#FFFFFF" />
+
+  <!-- Destination Pin (Red Location Drop Pin) at Cầu Giấy -->
+  <path
+      android:pathData="M280,22 c-5.5,0 -10,4.5 -10,10 c0,7.5 10,18 10,18 s10,-10.5 10,-18 c0,-5.5 -4.5,-10 -10,-10z M280,36 c-2.2,0 -4,-1.8 -4,-4 s1.8,-4 4,-4 4,1.8 4,4 -1.8,4 -4,4z"
+      android:fillColor="#EF4444" />
+
+</vector>

@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".ProductDetailActivity">
+
+    <!-- Premium Background Decor -->
+    <View
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="-100dp"
+        android:alpha="0.1"
+        android:background="@drawable/orange_soft_circle"
+        app:layout_anchorGravity="top|end" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnBack"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#FFE0CC"
+                android:backgroundTint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="13dp"
+                    android:src="@android:drawable/ic_menu_revert"
+                    app:tint="@color/orange_primary" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnFavorite"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#FFE0CC"
+                android:backgroundTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:id="@+id/imgFavoriteHeart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="13dp"
+                    android:src="@drawable/ic_heart_outline" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="120dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hero Image Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp"
+                app:strokeWidth="0dp">
+                <ImageView
+                    android:id="@+id/imgProductDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="24dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/laptopgamingden"
+                    android:background="@color/white" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Product Details Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvDetailName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Laptop Gaming - Đen"
+                    android:textColor="#0F172A"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!-- Price Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvDetailPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25.990.000đ"
+                        android:textColor="@color/orange_primary"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDetailOldPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="28.990.000đ"
+                        android:textColor="#94A3B8"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Sold & Stock Info Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvDetailSoldCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đã bán: 245 đơn hàng"
+                        android:textColor="#E11D48"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:text="•"
+                        android:textColor="#CBD5E1" />
+
+                    <TextView
+                        android:id="@+id/tvDetailStockCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Còn lại: 15 sản phẩm"
+                        android:textColor="#059669"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Quick Specs Grid Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="2dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#E2E8F0"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cấu hình &amp; Thông tin sản phẩm"
+                            android:textColor="#1E293B"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="12dp" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1">
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:id="@+id/tvLabel1" android:text="• CPU / Loại: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailCpu" android:text="Intel Core i7" android:textColor="#1E293B" />
+                            </TableRow>
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:id="@+id/tvLabel2" android:text="• RAM / Kết nối: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailRam" android:text="16GB" android:textColor="#1E293B" />
+                            </TableRow>
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:id="@+id/tvLabel3" android:text="• SSD / Pin: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailSsd" android:text="1TB" android:textColor="#1E293B" />
+                            </TableRow>
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:id="@+id/tvLabel4" android:text="• GPU / Chống ồn: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailGpu" android:text="RTX 4060" android:textColor="#1E293B" />
+                            </TableRow>
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:id="@+id/tvLabel5" android:text="• Màn hình / Mic: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailScreen" android:text="15.6 inch 144Hz" android:textColor="#1E293B" />
+                            </TableRow>
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:text="• Màu sắc: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailColor" android:text="Đen" android:textColor="#1E293B" />
+                            </TableRow>
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:text="• Tình trạng: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailStatus" android:text="Mới 100%" android:textColor="#1E293B" />
+                            </TableRow>
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:text="• Bảo hành: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailWarranty" android:text="24 tháng" android:textColor="#1E293B" />
+                            </TableRow>
+
+                            <TableRow android:paddingVertical="4dp">
+                                <TextView android:text="• Tồn kho: " android:textStyle="bold" android:textColor="#475569" />
+                                <TextView android:id="@+id/tvDetailStock" android:text="10 sản phẩm" android:textColor="#1E293B" />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Detailed Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Mô tả chi tiết"
+                    android:textColor="#1E293B"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvDetailDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Laptop gaming hiệu năng cao, phù hợp chơi game, lập trình, đồ họa và xử lý các tác vụ nặng. Thiết kế mạnh mẽ, bàn phím RGB, hệ thống tản nhiệt tốt."
+                    android:textColor="#475569"
+                    android:textSize="14sp" />
+
+                <!-- Technical Specs Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Thông số kỹ thuật"
+                    android:textColor="#1E293B"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvDetailSpecs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="CPU: Intel Core i7\nRAM: 16GB DDR5\nSSD: 1TB NVMe PCIe 4.0\nGPU: NVIDIA GeForce RTX 4060 8GB\nMàn hình: 15.6 inch Full HD (1920x1080) 144Hz IPS\nPin: 4-cell 90Whr\nTrọng lượng: 2.2 kg"
+                    android:textColor="#475569"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="24dp"
+                    android:background="#F1F5F9" />
+
+                <!-- Reviews & Comments Section Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đánh giá &amp; Nhận xét từ Khách hàng"
+                    android:textColor="#0F172A"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <!-- Overall Rating Score Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    app:cardCornerRadius="22dp"
+                    app:cardElevation="3dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#E2E8F0"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvRatingScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.8"
+                                android:textColor="#0F172A"
+                                android:textSize="36sp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="4.8"
+                                android:progressTint="@color/orange_primary"
+                                android:isIndicator="true" />
+
+                            <TextView
+                                android:id="@+id/tvTotalReviewsCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 đánh giá"
+                                android:textColor="#94A3B8"
+                                android:textSize="11sp"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="64dp"
+                            android:layout_marginHorizontal="18dp"
+                            android:background="#F1F5F9" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Rating bar row 5 star -->
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingVertical="1dp">
+                                <TextView android:layout_width="22dp" android:layout_height="wrap_content" android:text="5★" android:textSize="11sp" android:textColor="#64748B" android:textStyle="bold"/>
+                                <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="6dp" android:layout_weight="1" android:progress="80" android:progressTint="@color/orange_primary" android:progressBackgroundTint="#F1F5F9"/>
+                                <TextView android:layout_width="28dp" android:layout_height="wrap_content" android:text="80%" android:textSize="10sp" android:textColor="#94A3B8" android:gravity="end"/>
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingVertical="1dp">
+                                <TextView android:layout_width="22dp" android:layout_height="wrap_content" android:text="4★" android:textSize="11sp" android:textColor="#64748B" android:textStyle="bold"/>
+                                <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="6dp" android:layout_weight="1" android:progress="15" android:progressTint="@color/orange_primary" android:progressBackgroundTint="#F1F5F9"/>
+                                <TextView android:layout_width="28dp" android:layout_height="wrap_content" android:text="15%" android:textSize="10sp" android:textColor="#94A3B8" android:gravity="end"/>
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingVertical="1dp">
+                                <TextView android:layout_width="22dp" android:layout_height="wrap_content" android:text="3★" android:textSize="11sp" android:textColor="#64748B" android:textStyle="bold"/>
+                                <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="6dp" android:layout_weight="1" android:progress="5" android:progressTint="@color/orange_primary" android:progressBackgroundTint="#F1F5F9"/>
+                                <TextView android:layout_width="28dp" android:layout_height="wrap_content" android:text="5%" android:textSize="10sp" android:textColor="#94A3B8" android:gravity="end"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Modern Elevated Review Submission Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="22dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#FFE8D6"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Viết đánh giá của bạn ✨"
+                            android:textColor="#0F172A"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chia sẻ cảm nhận thực tế giúp cộng đồng TechZone"
+                            android:textColor="#94A3B8"
+                            android:textSize="12sp"
+                            android:layout_marginTop="2dp" />
+
+                        <!-- Compact Interactive Rating Selector -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="14dp">
+
+                            <RatingBar
+                                android:id="@+id/ratingBarInput"
+                                style="?android:attr/ratingBarStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="5"
+                                android:stepSize="1"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:transformPivotX="0dp"
+                                android:progressTint="@color/orange_primary" />
+
+                            <TextView
+                                android:id="@+id/tvRatingHint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="-12dp"
+                                android:text="5/5 ⭐ Tuyệt vời"
+                                android:textColor="@color/orange_primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- Rounded Styled Input Box -->
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#E2E8F0"
+                            android:backgroundTint="#F8FAFC">
+
+                            <EditText
+                                android:id="@+id/edtComment"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:background="@null"
+                                android:hint="Nhập cảm nhận của bạn về sản phẩm (chất lượng, độ bền, đóng gói)..."
+                                android:textColorHint="#94A3B8"
+                                android:textColor="#0F172A"
+                                android:gravity="top"
+                                android:padding="14dp"
+                                android:textSize="13sp"
+                                android:lineSpacingExtra="3dp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- 2 Action Buttons: Thêm Ảnh & Đánh Giá -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnSelectReviewImage"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Thêm ảnh"
+                                android:textColor="@color/orange_primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                app:icon="@drawable/ic_review_camera"
+                                app:iconTint="@color/orange_primary"
+                                app:iconGravity="textStart"
+                                app:iconPadding="6dp"
+                                app:strokeColor="@color/orange_primary"
+                                app:strokeWidth="1.5dp"
+                                app:cornerRadius="16dp" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/cardReviewPreview"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_marginStart="8dp"
+                                android:visibility="gone"
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="0dp">
+                                <ImageView
+                                    android:id="@+id/imgReviewPreview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnSubmitReview"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:text="Đánh giá"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                app:icon="@drawable/ic_review_send"
+                                app:iconTint="@color/white"
+                                app:iconGravity="textStart"
+                                app:iconPadding="6dp"
+                                android:backgroundTint="@color/orange_primary"
+                                app:cornerRadius="16dp"
+                                app:elevation="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvReviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Floating Action Bottom Bar -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="24dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="24dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddToCart"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Thêm giỏ hàng"
+                android:textColor="@color/orange_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:strokeColor="@color/orange_primary"
+                app:strokeWidth="1.5dp"
+                app:cornerRadius="18dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBuyNow"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="Đặt hàng"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="18dp"
+                android:backgroundTint="@color/orange_primary"
+                app:elevation="4dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
