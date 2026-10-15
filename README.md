@@ -127,27 +127,7 @@ Trong tương lai, dự án có thể được mở rộng thêm:
 
 ---
 
-#👨‍💻 6. THÔNG TIN TÁC GIẢ
-
-Sinh viên thực hiện: Lê Văn Tuấn Anh
-
-Mã sinh viên: PH65249
-
-Trường: FPT Polytechnic
-
-Dự án: TechZone – Ứng dụng mua sắm thiết bị công nghệ
-
-Ngôn ngữ lập trình: Java
-
-Nền tảng: Android
-
-GitHub: [gamerruzy-source](https://github.com/gamerruzy-source)
-
-Repository: [TechZone](https://github.com/gamerruzy-source/techZone)
-
----
-
-#📌 7. GHI CHÚ
+#📌 6. GHI CHÚ
 
 TechZone là dự án được xây dựng phục vụ mục đích học tập, nghiên cứu và thực hành phát triển ứng dụng Android.
 
@@ -155,7 +135,7 @@ Các tính năng của dự án có thể tiếp tục được cập nhật, đ
 
 ---
 
-#👥 THÀNH VIÊN NHÓM THỰC HIỆN
+#👥 7. THÀNH VIÊN NHÓM THỰC HIỆN
 
 1. Lê Văn Tuấn Anh
 Mã sinh viên: PH65249
