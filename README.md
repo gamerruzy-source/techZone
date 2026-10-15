@@ -1,5 +1,7 @@
 
-#TECHZONE – ỨNG DỤNG MUA SẮM THIẾT BỊ CÔNG NGHỆ
+Tên dự án: TechZone – Ứng dụng mua sắm thiết bị công nghệ  
+Trường: FPT Polytechnic  
+Số lượng thành viên: 04
 
 TechZone là ứng dụng thương mại điện tử trên nền tảng Android, được phát triển nhằm mang đến trải nghiệm mua sắm các sản phẩm công nghệ hiện đại, thuận tiện và dễ sử dụng.
 Ứng dụng hỗ trợ người dùng khám phá, tìm kiếm, xem thông tin sản phẩm, quản lý giỏ hàng, đặt hàng và theo dõi đơn hàng. Đồng thời, hệ thống cung cấp các chức năng quản trị giúp quản lý sản phẩm và hoạt động kinh doanh hiệu quả.
@@ -98,49 +100,7 @@ techZone/
 
 ---
 
-#🚀 4. HƯỚNG DẪN CÀI ĐẶT VÀ CHẠY ỨNG DỤNG
-
-### Bước 1: Chuẩn bị môi trường
-
-Cài đặt các công cụ cần thiết:
-
-- Android Studio.
-- Android SDK phù hợp với cấu hình dự án.
-- Git.
-- Máy ảo Android Emulator hoặc điện thoại Android có bật USB Debugging.
-
-### Bước 2: Clone repository
-
-Mở Terminal hoặc Git Bash và chạy:
-
-```bash
-git clone https://github.com/gamerruzy-source/techZone.git
-```
-
-### Bước 3: Mở project bằng Android Studio
-
-1. Khởi động Android Studio.
-2. Chọn **Open**.
-3. Chọn thư mục `techZone` vừa clone.
-4. Chờ Android Studio tải các thư viện và hoàn thành **Gradle Sync**.
-
-### Bước 4: Cấu hình Firebase
-
-- Sử dụng Firebase project phù hợp với ứng dụng.
-- Đặt file `google-services.json` vào thư mục `app/`.
-- Kiểm tra Application ID, cấu hình Firebase và các dịch vụ cần thiết.
-- Bảo đảm tài khoản hoặc Firebase project được cấp quyền truy cập phù hợp.
-
-### Bước 5: Chạy ứng dụng
-
-1. Chọn thiết bị Android Emulator hoặc kết nối điện thoại thật.
-2. Chọn cấu hình chạy `app`.
-3. Nhấn **Run ▶**.
-4. Chờ ứng dụng được build và cài đặt lên thiết bị.
-
----
-
-#🎯 5. MỤC TIÊU DỰ ÁN
+#🎯 4. MỤC TIÊU DỰ ÁN
 
 Dự án TechZone được phát triển nhằm:
 
@@ -153,7 +113,7 @@ Dự án TechZone được phát triển nhằm:
 
 ---
 
-#🔮 6. ĐỊNH HƯỚNG PHÁT TRIỂN
+#🔮 5. ĐỊNH HƯỚNG PHÁT TRIỂN
 
 Trong tương lai, dự án có thể được mở rộng thêm:
 
@@ -167,7 +127,7 @@ Trong tương lai, dự án có thể được mở rộng thêm:
 
 ---
 
-#👨‍💻 7. THÔNG TIN TÁC GIẢ
+#👨‍💻 6. THÔNG TIN TÁC GIẢ
 
 Sinh viên thực hiện: Lê Văn Tuấn Anh
 
@@ -187,13 +147,58 @@ Repository: [TechZone](https://github.com/gamerruzy-source/techZone)
 
 ---
 
-#📌 8. GHI CHÚ
+#📌 7. GHI CHÚ
 
 TechZone là dự án được xây dựng phục vụ mục đích học tập, nghiên cứu và thực hành phát triển ứng dụng Android.
 
 Các tính năng của dự án có thể tiếp tục được cập nhật, điều chỉnh và tối ưu trong quá trình phát triển.
 
 ---
+
+#👥 THÀNH VIÊN NHÓM THỰC HIỆN
+
+1. Lê Văn Tuấn Anh
+Mã sinh viên: PH65249
+Vai trò: Nhóm trưởng
+Nhiệm vụ:
+Phát triển chức năng đăng nhập.
+Xây dựng chức năng tìm kiếm và lọc sản phẩm.
+Phát triển chức năng quản lý thông tin giao hàng.
+Xây dựng chức năng quản lý hồ sơ cá nhân.
+Tổng hợp, tích hợp và quản lý mã nguồn dự án trên GitHub.
+
+2. Vũ Văn Tân
+Nhiệm vụ:
+Phát triển chức năng đăng ký tài khoản.
+Thiết kế và xây dựng giao diện trang chủ.
+Phát triển chức năng xem chi tiết sản phẩm.
+Xây dựng chức năng quản trị sản phẩm.
+Phát triển chức năng lựa chọn biến thể sản phẩm.
+Xây dựng chức năng giỏ hàng.
+Phát triển danh sách sản phẩm yêu thích.
+Xây dựng chức năng đánh giá sản phẩm.
+Phát triển chức năng đổi mật khẩu.
+
+3. Đỗ Duy Tài
+Nhiệm vụ:
+Phát triển chức năng danh mục sản phẩm.
+Xây dựng chức năng quên mật khẩu.
+Phát triển chức năng quản lý giỏ hàng.
+Xây dựng chức năng lựa chọn phương thức thanh toán.
+Phát triển hệ thống thông báo đơn hàng.
+
+4. Trương Công Khải
+Nhiệm vụ:
+Phát triển chức năng đăng xuất.
+Xây dựng giao diện hiển thị kết quả đặt hàng.
+Phát triển chức năng theo dõi trạng thái đơn hàng.
+
+### Quá trình thực hiện
+Các thành viên phát triển những chức năng được phân công trên máy tính cá nhân. Sau đó, source code được tổng hợp và tích hợp thành ứng dụng TechZone hoàn chỉnh.
+Dự án sử dụng GitHub để lưu trữ mã nguồn, quản lý phiên bản và cung cấp tài liệu, minh chứng đóng góp của từng thành viên.
+
+### Liên kết dự án
+Repository: https://github.com/gamerruzy-source/techZone
 
 **©2026 nhóm 1 - Agile | FPT Polytechnic**
 
